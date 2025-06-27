@@ -1,0 +1,67 @@
+.title
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(254, 210, 218);
+    text-align: center;
+    
+}
+
+.textarea
+{
+    background: linear-gradient(to top, rgb(255, 241, 244), rgb(255, 206, 214));
+    border-color: rgb(254, 173, 187);
+    width: 80%;
+    padding: 0 1rem;
+    border-radius: 5%;
+}
+
+.textarea:focus
+{
+    border-color: rgb(255, 138, 157); /* A more noticeable pink */
+    outline: none; /* Optional: removes default blue outline */
+}
+
+.submitBtn
+{
+    background-color:rgb(255, 219, 225);
+    color: white;
+    border: rgb(236, 236, 236);
+    border-radius: 15%;
+}
+
+.submitBtn:hover
+{
+    background: rgb(255, 168, 182);
+    transition: all 0.3s ease;
+}
+
+.clearListBtn
+{
+    background-color:rgb(255, 219, 225);
+    color: white;
+    border: rgb(236, 236, 236);
+    border-radius: 15%;
+
+}
+
+.clearListBtn:hover
+{
+     background: rgb(255, 168, 182);
+    transition: all 0.3s ease;
+}
+
+h2
+{
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(255, 207, 241);
+    background-color: white;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style:dotted
+}
+
+.tasks {
+    display: flex;
+    align-items: center; /* vertically center the items */
+    gap: 8px;            /* space between button and text */
+}
