@@ -35,7 +35,7 @@
     transition: all 0.3s ease;
 }
 
-.clearListBtn
+.clearBtn
 {
     background-color:rgb(255, 219, 225);
     color: white;
@@ -44,7 +44,7 @@
 
 }
 
-.clearListBtn:hover
+.clearBtn:hover
 {
      background: rgb(255, 168, 182);
     transition: all 0.3s ease;
@@ -60,38 +60,34 @@ h2
     text-decoration-style:dotted
 }
 
-.taskList {
+.taskRow{
     display: flex;
+    align-items: center;   /* vertically center items */
+    gap: 10px;              /* space between button and text */
 }
 
 .taskBtn
 {
+    color:rgb(255, 208, 241);
     background: transparent;
-    color: rgb(255, 207, 241);
-    border:rgb(255, 254, 254);
+    border:white;
 }
 
 .taskBtn:hover
 {
-    background: rgb(252, 223, 228);
+    background:rgb(255, 152, 169);
+}
+
+.taskRow.completed
+{
+    text-decoration: line-through;
+    opacity:0.6;
+    
 }
 
 .task
 {
-    font-family:'Courier New', Courier, monospace;
-    color:rgb(106, 112, 117);
-    padding: 5 5;
-    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(144, 143, 143);
 }
 
-.taskRow
-{
-    display: flex;
-    align-items: center; /* vertically center the items */
-    gap: 8px;            /* space between button and text */
-}
-
-.taskRow.completed {
-    text-decoration: line-through;
-    opacity: 0.6; /* optional: makes it look faded */
-}
