@@ -60,8 +60,38 @@ h2
     text-decoration-style:dotted
 }
 
-.tasks {
+.taskList {
+    display: flex;
+}
+
+.taskBtn
+{
+    background: transparent;
+    color: rgb(255, 207, 241);
+    border:rgb(255, 254, 254);
+}
+
+.taskBtn:hover
+{
+    background: rgb(252, 223, 228);
+}
+
+.task
+{
+    font-family:'Courier New', Courier, monospace;
+    color:rgb(106, 112, 117);
+    padding: 5 5;
+    text-align: center;
+}
+
+.taskRow
+{
     display: flex;
     align-items: center; /* vertically center the items */
     gap: 8px;            /* space between button and text */
+}
+
+.taskRow.completed {
+    text-decoration: line-through;
+    opacity: 0.6; /* optional: makes it look faded */
 }
